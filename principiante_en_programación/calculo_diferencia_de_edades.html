@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cálculo diferencia de edades</h3>
+    <script>
+
+        var yo = 18;
+        var hermano = 22;
+        var diferencia = yo - hermano;
+
+        function saltarLinea(){
+            document.write("<br>");
+        }
+
+        function imprimir(numero){
+
+            document.write("Mi edad es " + yo);
+            saltarLinea();
+            document.write("La edad de mi hermano es " + hermano);
+            saltarLinea();
+            document.write("La diferencia entre mi edad y la de mi hermano es de: " + numero + " años");
+        }
+
+        imprimir(diferencia);
+
+    </script>
+</body>
+</html>

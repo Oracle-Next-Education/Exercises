@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>La cara de Creeper</h3>
+    <canvas width="1000", height="1000"></canvas>
+
+    <script>
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "darkgreen";
+
+        pincel.fillRect(0, 0, 1000, 1000);
+
+        pincel.fillStyle = "black";
+
+        pincel.beginPath();
+        pincel.moveTo(200, 200);
+        pincel.lineTo(400, 200);
+        pincel.lineTo(400, 400);
+        pincel.lineTo(200, 400);
+        pincel.fill();
+
+        pincel.beginPath();
+        pincel.moveTo(600, 200);
+        pincel.lineTo(800, 200);
+        pincel.lineTo(800, 400);
+        pincel.lineTo(600, 400);
+        pincel.fill();
+
+        pincel.beginPath();
+        pincel.moveTo(400, 400);
+        pincel.lineTo(600, 400);
+        pincel.lineTo(600, 750);
+        pincel.lineTo(400, 750);
+        pincel.fill();
+
+        pincel.beginPath();
+        pincel.moveTo(300, 500);
+        pincel.lineTo(400, 500);
+        pincel.lineTo(400, 1000);
+        pincel.lineTo(300, 1000);
+        pincel.fill();
+
+        pincel.beginPath();
+        pincel.moveTo(700, 500);
+        pincel.lineTo(700, 1000);
+        pincel.lineTo(600, 1000);
+        pincel.lineTo(600, 500);
+        pincel.fill();
+
+    </script>
+
+</body>
+</html>
